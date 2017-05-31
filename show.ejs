@@ -1,0 +1,15 @@
+<%include partials/header %>
+<div class="container">
+	<div class ="row" style="text-align: center">
+	<h1><%= camp.title %></h1>
+	<br>
+	<img src ="<%= camp.image %>" alt="">
+<br>
+<br>
+	<div class="thumbnail">
+		<p><%= camp.description %></p>
+	</div>
+	<a class="btn btn-primary" href="/campgrounds/<%= camp._id %>/edit">Edit</a>
+	</div>
+</div>
+<% include partials/footer.ejs %>

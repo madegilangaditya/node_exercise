@@ -1,0 +1,15 @@
+<% include partials/header.ejs %>
+
+<h1 style="text-align: center;">EDIT <%= camp.title %></h1>
+
+<form style="text-align: center;" class="container form-group" action="/campgrounds/<%= camp._id %>?_method=PUT" method="POST">
+  <input class="form-control" type="text" name="camp[title]" value="<%= camp.title %>" placeholder="title">
+  <br>
+  <input class="form-control" type="text" name="camp[image]" value="<%= camp.image %>"  placeholder="image url">
+  <br>
+  <input class="form-control" type="text" name="camp[description]" value="<%= camp.description %> "placeholder="Description">
+  <br>
+  <input class="btn btn-primary" type="submit" name="submit" ></input>
+</form>
+
+<% include partials/footer.ejs %>
