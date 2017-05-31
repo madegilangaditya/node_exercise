@@ -1,0 +1,15 @@
+<% include partials/header.ejs %>
+
+<h1 style="text-align: center;">add new campground</h1>
+
+<form style="text-align: center;" class="container form-group" action="/campgrounds" method="POST">
+  <input class="form-control" type="text" name="title" placeholder="title">
+  <br>
+  <input class="form-control" type="text" name="image" placeholder="image url">
+  <br>
+  <input class="form-control" type="text" name="description" placeholder="Description">
+  <br>
+  <a class="btn btn-primary" href="#">Submit</a>
+</form>
+
+<% include partials/footer.ejs %>
